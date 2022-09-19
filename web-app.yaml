@@ -13,12 +13,12 @@ spec:
         app: web-app
     spec:
       imagePullSecrets:
-      - name: sudheer
+      - name: kiran
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
       - name: web-app
-        image: sudheeracr.azurecr.io/sudheeracr/devops:2.1.0
+        image: eswaracr.azurecr.io/eswaracr/kiran:1.0
         env:
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
